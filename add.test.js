@@ -1,4 +1,4 @@
-require('./add.js');
+import {add} from './add';
 
 describe('add' ,() => {
     it('should compute the sum', () => {
