@@ -1,6 +1,7 @@
 {
   "name": "jest-starter",
   "version": "0.0.1",
+  "license":"MIT",
   "dependencies": {},
   "devDependencies": {
     "babel-core": "^6.26.0",
