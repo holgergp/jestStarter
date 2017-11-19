@@ -2,5 +2,9 @@
   "dependencies": {
     "jest": "^21.2.1",
     "jest-cli": "^21.2.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
   }
 }
