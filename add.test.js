@@ -1,6 +1,4 @@
-const add = (a, b) => {
-    return a + b;
-}
+require('./add.js');
 
 describe('add' ,() => {
     it('should compute the sum', () => {
