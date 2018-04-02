@@ -1,3 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`validationMesssage should should produce a valid message 1`] = `"Feld 'Vorname' ist ein Pflichtfeld."`;
+exports[`validationMesssage should should produce a valid message 1`] = `"Das Feld 'Vorname' ist ein Pflichtfeld."`;
