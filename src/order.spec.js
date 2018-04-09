@@ -19,6 +19,7 @@ describe('bulkOrder should', () => {
 });
 
 export function checkAvailability(product) {
+    doSomething();
     return product.isAvailable();
 }
 

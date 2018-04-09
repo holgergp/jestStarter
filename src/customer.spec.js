@@ -1,9 +1,9 @@
 describe('createCustomer should', () => {
-    it('produce a valid custoome', () => {
-        const customer = {name: 'Holger', premium: true};
+    it('produce a valid customer', () => {
+        const customer = {name: 'Peter', premium: true};
         expect(customer).toBeDefined();
-        expect(customer.name).toEqual('Holger');
-        expect(customer.name).toEqual(expect.stringContaining('olg'));
+        expect(customer.name).toEqual('Peter');
+        expect(customer.name).toEqual(expect.stringContaining('ete'));
         expect(customer).toEqual(expect.objectContaining({premium: true}));
     });
 });
@@ -11,7 +11,7 @@ describe('createCustomer should', () => {
 describe('createCustomers should', () => {
     it('work with many customer', () => {
         const customers = [
-            {name: 'Holger', premium: true},
+            {name: 'Peter', premium: true},
             {name: 'Max', premium: false},
             {name: 'Tine', premium: true}
         ];
