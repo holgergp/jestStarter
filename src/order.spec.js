@@ -23,6 +23,10 @@ export function checkAvailability(product) {
     return product.isAvailable();
 }
 
+const doSomething = () => {
+    //important stuff
+}
+
 it('bulkCheck for availability', () => {
     const product = {
         isAvailable: jest.fn().mockReturnValue(true)
