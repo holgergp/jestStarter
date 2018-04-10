@@ -18,19 +18,19 @@ describe('bulkOrder should', () => {
     });
 });
 
-export function checkAvailability(product) {
-    doSomething();
-    return product.isAvailable();
-}
+describe('showProductStatus should', () =>
+    it('return an appropriate answer if product is available', () => {
+        const product = {
+            isAvailable: jest.fn().mockReturnValue(true)
+        };
+        const productStatus = showProductStatus(product);
+        expect(productStatus).toBe('Das Produkt ist verfügbar :)');
+    })
+);
 
-const doSomething = () => {
-    //important stuff
+export function showProductStatus(product) {
+    const messagePrefix = 'Das Produkt';
+    return product.isAvailable()
+        ? `${messagePrefix} ist verfügbar :)`
+        : `${messagePrefix} ist nicht verfügbar :(`;
 }
-
-it('bulkCheck for availability', () => {
-    const product = {
-        isAvailable: jest.fn().mockReturnValue(true)
-     };
-    checkAvailability(product);
-    expect(product.isAvailable()).toBe(true);
-});
