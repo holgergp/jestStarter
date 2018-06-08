@@ -34,3 +34,24 @@ export function showProductStatus(product) {
         ? `${messagePrefix} ist verfügbar :)`
         : `${messagePrefix} ist nicht verfügbar :(`;
 }
+
+export function placeOrder(product, qty, seasonId) {
+    if (product.isAvailable(seasonId)) {
+        product.order(qty);
+    }
+}
+
+describe('placeOrder should', () =>
+    it('order an available product', () => {
+        const product = {
+            isAvailable: jest.fn().mockReturnValue(true),
+            order: jest.fn()
+        };
+        placeOrder(product, 2, 'SOMMER');
+        expect(product.order).toHaveBeenCalled();
+        expect(product.order).toHaveBeenCalledTimes(1);
+        expect(product.order).lastCalledWith(2);
+        expect(product.order).toHaveBeenCalledWith(2);
+
+    })
+);
