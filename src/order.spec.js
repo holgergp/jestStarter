@@ -52,6 +52,5 @@ describe('placeOrder should', () =>
         expect(product.order).toHaveBeenCalledTimes(1);
         expect(product.order).lastCalledWith(2);
         expect(product.order).toHaveBeenCalledWith(2);
-
     })
 );
