@@ -1,7 +1,7 @@
 {
   "name": "jest-starter",
   "version": "0.0.1",
-  "license":"MIT",
+  "license": "MIT",
   "dependencies": {},
   "scripts": {
     "start": "webpack-dev-server",
