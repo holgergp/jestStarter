@@ -2,7 +2,6 @@
   "name": "jest-starter",
   "version": "0.0.1",
   "license": "MIT",
-  "dependencies": {},
   "scripts": {
     "start": "webpack-dev-server",
     "test": "jest",
@@ -10,12 +9,17 @@
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
-    "babel-jest": "^21.2.0",
+    "babel-jest": "^23.0.1",
     "babel-preset-env": "^1.6.1",
-    "jest": "^22.4",
-    "jest-cli": "^22.4"
+    "jest": "^23.0.1",
+    "jest-cli": "^23.0.1",
+    "jest-watch-typeahead": "^0.1.0"
   },
   "jest": {
-    "verbose": false
+    "verbose": false,
+    "watchPlugins": [
+      "jest-watch-typeahead/filename",
+      "jest-watch-typeahead/testname"
+    ]
   }
 }
